@@ -1,8 +1,19 @@
+/* Header */
+
+.home {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    right: 50px;
+    bottom: 50px;
+}
 .header {
     background-color: #333;
     background-image: url("../img/header-m.jpg");
     width: 100%;
     height: 220px;
+    margin-top: -10px;
 }
 li.col-md-3 {
     position: relative;
@@ -26,17 +37,13 @@ li.col-md-3:hover {
     background-color: white;
     color: black;
 }
-.photo {
+
+/* Galvenā */
+
+#main {
     background-image: url(../img/bg-group.jpg);
     width: 100%;
-    height: 768px;
-}
-.par-grupu {
-    margin: 0px;
-    font-size: 0px;
-    width: 100%;
-    height: 800px;
-    background-color: antiquewhite;
+    height: 750px;
 }
 
 .spotify-widget {
@@ -66,11 +73,66 @@ li.col-md-3:hover {
     -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
     box-shadow:0 0 20px rgba(0,0,0,0.8);
     border: 3px solid black;
+}
 
-h1 { 
+/* Par grupu */
+    
+.par-grupu {
+    margin-top: -20px;
+    font-size: 0px;
+    width: 100%;
+    height: 800px;
+    background-color: antiquewhite;
+}
+    
+.par-grupu h1 {
+    width: 300px;
     position: relative;
     font-size: 50px;
     text-transform: uppercase;
+    text-decoration: none;
     font-family: sans-serif;
     top: 50px;
+    left: 480px;
+}
+.apraksts p{
+    color: #333;
+    font-size: 20px;
+    height: 100px;
+}
+.apraksts {
+    height: 100px;
+    width: 920px;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+.apraksts h3{
+    font-size: 30px;
+    width: 200px;
+    margin-left: -40px;
+}
+#myCarousel {
+    top: 40px;
+    height: 500px;
+}
+.carousel-indicators {
+    height: 30px;
+}
+.carousel-caption {
+    top: 260px;
+    height: 150px;
+}
+.item, item active {
+    height: 450px;
+}
+.carousel-caption h3 {
+    color: #333;
+}
+.carousel-caption p {
+    color: cadetblue;
+    font-size: 14px;
+    margin-top: -10px;
+}
+.carousel-caption h4 {
+    color: #555;
 }

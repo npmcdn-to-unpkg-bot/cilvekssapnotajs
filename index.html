@@ -1,28 +1,123 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cilvēks- Sapņotājs</title>
+        <title>Cilvēks-Sapņotājs</title>
+        <meta charset="utf-8">
+            <!-- Links -->
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon"/>
         <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:500' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+            <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script type="text/javascript" language="JavaScript">
+$(document).ready(function(){
+     $("#myCarousel").carousel({
+         interval: 5000
+     });
+});
+</script>
     </head>
     <body>
+        <!-- Cepure -->
         <div class="header">
+            <div class="home">
+            </div>
             <center><ul>
-                <a href="#" class="btn-menu"><li class="col-md-3">Galvenā</li></a>
-                <a href="#" class="btn-menu"><li class="col-md-3">Par grupu</li></a>
-                <a href="#" class="btn-menu"><li class="col-md-3">Koncerti</li></a>
-                <a href="#" class="btn-menu"><li class="col-md-3">Kontakti</li></a>
+                <a href="#" id="main-btn"><li class="col-md-3">Galvenā</li></a>
+                <a href="#" id="pargrupu-btn"><li class="col-md-3">Par grupu</li></a>
+                <a href="#" id="nav"><li class="col-md-3">Koncerti</li></a>
+                <a href="#" id="nav"><li class="col-md-3">Kontakti</li></a>
                 </ul></center>
-        </div><!--
-     --><div class="photo">
+        </div>
+        <!-- Galvenā -->
+        <div id="main">
+            <a name="main"></a>
             <iframe class="spotify-widget" src="https://embed.spotify.com/follow/1/?uri=spotify:artist:39vbR6rsC2c57Nd2CjiHhh&size=detail&theme=dark" width="300" height="70" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
             <iframe class="facebook-widget" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcilvekssapnotajs%2F&tabs&width=260&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=137843436259434" width="260" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
             <iframe class="bandcamp-widget" style="border: 0; width: 300px; height: 70px;" src="http://bandcamp.com/EmbeddedPlayer/track=3272322380/size=small/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="http://cilvekssapnotajs.bandcamp.com/track/saule">Saule by Cilvēks-Sapņotājs</a></iframe>
         </div>
+        <!-- Par grupu -->
         <div class="par-grupu">
-            <h1>par grupu</h1>
+            <h1>PAR GRUPU</h1>
+            <div class="apraksts">
+                <center>
+                <p>Cilvēks ir sapņotājs tad, kad sapņi ir īstenība. Ar šādu ideju saistīta mūzikas grupa „Cilvēks-Sapņotājs”. Grupā darbojas četri jaunieši, kas apvieno savas radošās idejas, lai ļautu saskatīt to, kas liekas neredzams un sajust to, kas liekas tāls un nereāls. Sāksim sapņot nomodā. </p>
+                    <h3>DALĪBNIEKI</h3>
+                </center>
+            </div>
+            <!-- Carousel -->
+            <div class="container">
+                <br>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <!-- Darta -->
+                        <div class="item active">
+                            <center>
+                                <img src="img/darta.png" alt="Dārta" width="310" height="310">
+                            </center>
+                            <div class="carousel-caption">
+                                <h3>Dārta Katrīne Salna</h3>
+                                <p class="loma">Vokāls, taustiņi</p>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin erat et eros tempor, eu vulputate ex accumsan. Aenean vestibulum sollicitudin dui vitae vulputate. .</h4>
+                            </div>
+                        </div>
+                        <!-- Aivars -->
+                        <div class="item">
+                            <center>
+                                <img src="img/aivars.png" alt="Aivars" width="310" height="310">
+                            </center>
+                            <div class="carousel-caption">
+                                <h3>Aivars Bruno Salna</h3>
+                                <p class="loma">Vokāls, taustiņi, ģitāra</p>
+                                <h4>The quick brown fox jumped over the lazy dog</h4>
+                            </div>
+                        </div>
+                        <!-- Rihards -->
+                        <div class="item">
+                            <center>
+                                <img src="img/rihards.png" alt="Rihards" width="310" height="310">
+                            </center>
+                            <div class="carousel-caption">
+                                <h3>Rihards Dievapēds</h3>
+                                <p class="loma">Basģitāra</p>
+                                <h4>-"Zeķes zem deķa, zeķes zem deķa, manas zeķes zem deķa"</h4>
+                            </div>
+                        </div>
+                        <!-- Artūrs -->
+                        <div class="item">
+                            <center>
+                                <img src="img/arturs.png" alt="Artūrs" width="310" height="310">
+                            </center>
+                            <div class="carousel-caption">
+                                <h3>Artūrs Škutāns</h3>
+                                <p class="loma">Bungas, perkusijas</p>
+                                <h4>-"Man ir liels p*nis"</h4>
+                            </div>
+                        </div>
+  
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
         </div>
-    </body>
+    </body>    
 </html>
