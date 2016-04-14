@@ -1,13 +1,22 @@
 /* Header */
 
-.home {
+#home {
     position: fixed;
-    width: 50px;
-    height: 50px;
-    background-color: black;
+    width: 80px;
+    height: 80px;
+    background-image: url("../img/home80.png");
     right: 50px;
     bottom: 50px;
+    opacity: 0.6px;
 }
+#home p {
+    font-size: 12px;
+    margin-top: 60px;
+    margin-left: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
 .header {
     background-color: #333;
     background-image: url("../img/header-m.jpg");
@@ -25,7 +34,7 @@ li.col-md-3 {
     margin-top: 5px;
     width: 200px;
     margin-right: 80px;
-    margin-left: 20px;
+    margin-left: 30px;
     border: 2px solid white;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -38,6 +47,9 @@ li.col-md-3:hover {
     color: black;
 }
 
+.header ul {
+    margin-left: 40px;
+}
 /* Galvenā */
 
 #main {
@@ -109,7 +121,7 @@ li.col-md-3:hover {
 .apraksts h3{
     font-size: 30px;
     width: 200px;
-    margin-left: -40px;
+    margin-left: 42px;
 }
 #myCarousel {
     top: 40px;
