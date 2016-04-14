@@ -11,4 +11,21 @@ $(document).ready(function(){
     $("#myCarousel").carousel({
          interval: 5000
      });
+    $("#home").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".header").offset().top
+                }, 500);
+            });
+    $("#main-btn").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#main").offset().top
+                }, 500);
+            });
+    $("#pargrupu-btn").click(function (){
+                $('html, body').animate({
+                    scrollTop: $(".par-grupu").offset().top
+                }, 500);
+            });
+    
+    
 });
