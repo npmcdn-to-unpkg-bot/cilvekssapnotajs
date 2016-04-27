@@ -22,6 +22,7 @@ body {
     height: 80px;
     right: 50px;
     bottom: 50px;
+    opacity: 0.6px;
 }
 #home p {
     font-size: 12px;
@@ -82,9 +83,15 @@ li.col-md-3 {
     font-family: "Alegreya Sans";
     font-size: 16px;
     margin-top: 5px;
+<<<<<<< HEAD
     width: 20%;
     margin-right: auto;
     margin-left: auto;
+=======
+    width: 200px;
+    margin-right: 80px;
+    margin-left: 30px;
+>>>>>>> 306d76d61630da48570b4fc9c01b85fc88b957e0
     border: 2px solid white;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -97,6 +104,9 @@ li.col-md-3:hover {
     color: black;
 }
 
+.header ul {
+    margin-left: 40px;
+}
 /* Galvenā */
 
 #main {
@@ -141,8 +151,12 @@ li.col-md-3:hover {
 .apraksts h3{
     font-size: 30px;
     width: 200px;
+<<<<<<< HEAD
     margin-left: auto;
     margin-right: auto;
+=======
+    margin-left: 42px;
+>>>>>>> 306d76d61630da48570b4fc9c01b85fc88b957e0
 }
 #myCarousel {
     top: 40px;
