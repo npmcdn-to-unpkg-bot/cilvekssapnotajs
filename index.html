@@ -7,23 +7,37 @@
         <link rel="icon" href="../img/favicon.ico" type="image/x-icon"/>
         <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
         <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+            <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:500' rel='stylesheet' type='text/css'>
             <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script type="text/javascript" language="JavaScript">
-$(document).ready(function(){
-     $("#myCarousel").carousel({
-         interval: 5000
-     });
-});
-</script>
+        <script src="js/myScript.js"></script>
     </head>
     <body>
+        <div id="page">
         <!-- Cepure -->
         <div class="header">
-            <div class="home">
+            <div id="links">
+                <a href="https://www.facebook.com/cilvekssapnotajs/" target="_blank">
+                <div class="fb">
+                </div>
+                </a>
+                <a href="https://play.spotify.com/artist/39vbR6rsC2c57Nd2CjiHhh" target="_blank">
+                <div class="spotify">
+                </div>
+                </a>
+                <a href="http://cilvekssapnotajs.bandcamp.com/" target="_blank">
+                <div class="bc">
+                </div>
+                </a>
             </div>
-            <center><ul>
+            <a href="#">
+            <div id="home">
+                <p>UZ AUGUŠU</p>
+            </div>
+            </a>
+            <center><ul class="menu">
                 <a href="#" id="main-btn"><li class="col-md-3">Galvenā</li></a>
                 <a href="#" id="pargrupu-btn"><li class="col-md-3">Par grupu</li></a>
                 <a href="#" id="nav"><li class="col-md-3">Koncerti</li></a>
@@ -33,9 +47,6 @@ $(document).ready(function(){
         <!-- Galvenā -->
         <div id="main">
             <a name="main"></a>
-            <iframe class="spotify-widget" src="https://embed.spotify.com/follow/1/?uri=spotify:artist:39vbR6rsC2c57Nd2CjiHhh&size=detail&theme=dark" width="300" height="70" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
-            <iframe class="facebook-widget" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcilvekssapnotajs%2F&tabs&width=260&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=137843436259434" width="260" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-            <iframe class="bandcamp-widget" style="border: 0; width: 300px; height: 70px;" src="http://bandcamp.com/EmbeddedPlayer/track=3272322380/size=small/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="http://cilvekssapnotajs.bandcamp.com/track/saule">Saule by Cilvēks-Sapņotājs</a></iframe>
         </div>
         <!-- Par grupu -->
         <div class="par-grupu">
@@ -118,6 +129,7 @@ $(document).ready(function(){
                     </a>
                 </div>
             </div>
+        </div>
         </div>
     </body>    
 </html>
